@@ -4,7 +4,7 @@ Este proyecto es una API REST creada con **Spring Boot**. Permite realizar opera
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Java 17
 - Spring Boot 3.3.x
@@ -16,7 +16,7 @@ Este proyecto es una API REST creada con **Spring Boot**. Permite realizar opera
 
 ---
 
-## 📌 Funcionalidades principales
+## Funcionalidades principales
 
 La API permite:
 
@@ -45,7 +45,7 @@ Los datos son simulados en memoria, no se usa base de datos.
 
 ---
 
-## 📄 Formato esperado (JSON)
+## Formato esperado (JSON)
 
 ### Crear un usuario:
 
@@ -72,5 +72,13 @@ Swagger UI
 
 Para ver la documentación interactiva:
 
-📍 Abre en el navegador:
+Abre en el navegador:
 http://localhost:8080/swagger-ui.html
+
+Producción en Render
+
+La API está desplegada en Render:
+
+https://userapi-omarvalencia.onrender.com/swagger-ui/index.html
+
+Puedes probar todos los endpoints directamente desde la interfaz Swagger en línea.
