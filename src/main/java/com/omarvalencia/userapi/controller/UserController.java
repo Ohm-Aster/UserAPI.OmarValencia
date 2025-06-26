@@ -112,6 +112,16 @@ public class UserController {
         user.setId(generateUserId());
         user.setPassword(Utils.sha1(user.getPassword()));
         user.setCreatedAt(Utils.currentUkTime());
+      
+        // Si hay direcciones, les asignamos un ID empezando desde 1
+        if (user.getAddresses() != null) {
+            int addressId = 1;
+            for (Address addr : user.getAddresses()) {
+                addr.setId(addressId++);
+            }
+        } else {
+            user.setAddresses(new ArrayList<>());
+        }
         users.add(user);
         return user;
     }
