@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "User API - Render Deployment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List all users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://userapi-omarvalencia.onrender.com/users",
+          "protocol": "https",
+          "host": ["userapi-omarvalencia", "onrender", "com"],
+          "path": ["users"]
+        }
+      }
+    },
+    {
+      "name": "Get addresses for user 123",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://userapi-omarvalencia.onrender.com/users/123/addresses",
+          "protocol": "https",
+          "host": ["userapi-omarvalencia", "onrender", "com"],
+          "path": ["users", "123", "addresses"]
+        }
+      }
+    },
+    {
+      "name": "Create a new user",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"emma@example.com\",\n  \"name\": \"Emma\",\n  \"password\": \"mypassword\"\n}"
+        },
+        "url": {
+          "raw": "https://userapi-omarvalencia.onrender.com/users",
+          "protocol": "https",
+          "host": ["userapi-omarvalencia", "onrender", "com"],
+          "path": ["users"]
+        }
+      }
+    },
+    {
+      "name": "Patch user 123 (change name)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"EmmaUpdated\"\n}"
+        },
+        "url": {
+          "raw": "https://userapi-omarvalencia.onrender.com/users/123",
+          "protocol": "https",
+          "host": ["userapi-omarvalencia", "onrender", "com"],
+          "path": ["users", "123"]
+        }
+      }
+    },
+    {
+      "name": "Delete user 124",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://userapi-omarvalencia.onrender.com/users/124",
+          "protocol": "https",
+          "host": ["userapi-omarvalencia", "onrender", "com"],
+          "path": ["users", "124"]
+        }
+      }
+    }
+  ]
+}
